@@ -7,7 +7,12 @@ html{
     font-size: 6.25%;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100vw;
     font-size: 13rem;
+    overflow: hidden;
     font-family: arial, sans-serif;
     color: dimgray;
 }
@@ -17,7 +22,7 @@ header{
     display: flex;
     justify-content: flex-end;
     align-content: center;
-    width: 100vw;
+    width: 100%;
     padding: 10px;
     margin-bottom: 15px;
 }
@@ -74,7 +79,7 @@ main img{
     bottom: 19px;
     width: 75%;
     height: 42px;
-    font-size: 17px;
+    font-size: 17rem;
     caret-color: rgb(181, 181, 181);
     background-color: transparent;
      border: none;
@@ -90,4 +95,37 @@ main img{
 }
 .search-bar .right-svg svg{
     margin: 10px 5px;
+}
+.btns{
+    position: relative;
+    right: 28px;
+}
+.btns button{
+    padding: 10px 15px;
+    margin-left: 10px;
+    font-size: 14rem;
+    background-color: #f8f9fa;
+    color: rgba(0, 0, 0, 0.68);
+    border: none;
+    border-radius: 5px;
+}
+/* FOOTER */
+
+footer{
+    padding: 0px 20px;
+    margin-top: auto;
+    width: 100%;
+    font-size: 14rem;
+    background-color: #f2f2f2;
+    list-style: none;
+}
+footer ul:nth-child(2){
+    float: right;
+}
+footer ul:nth-child(1){
+    float: left;
+}
+footer ul li{
+    display: inline-block;
+    margin: 15px;
 }

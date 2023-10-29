@@ -1,3 +1,38 @@
-:root{
-    --logo-font: arial, sans-serif;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 6.25%;
+}
+body{
+    font-size: 13rem;
+    font-family: arial, sans-serif;
+    color: dimgray;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 100vw;
+    padding: 10px;
+}
+header li{
+    display: inline-block;
+    margin-right: 10px;
+}
+header li img{
+    position: relative;
+    top: 8px;
+    margin: 0px 5px;
+}
+header li button{
+    background-color: #4089f5;
+    border: none;
+    padding: 7px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
 }

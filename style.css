@@ -12,12 +12,14 @@ body{
     color: dimgray;
 }
 
+/* HEADER */
 header{
     display: flex;
     justify-content: flex-end;
     align-content: center;
     width: 100vw;
     padding: 10px;
+    margin-bottom: 15px;
 }
 header li{
     display: inline-block;
@@ -35,4 +37,57 @@ header li button{
     border-radius: 3px;
     color: #fff;
     font-weight: bold;
+}
+
+/* CONTENIDO PRINCIPAL */
+svg{
+    width: 23px;
+}
+main{
+    display: grid;
+    place-content: center;
+    row-gap: 25px;
+    margin-left: 30px;
+    width: 100%;
+}
+main img{
+    width: 270px;
+}
+.search-bar{
+    position: relative;
+    right: 50%;
+    width: 180%;
+    height: 48px;
+    border: 1px solid rgba(195, 194, 194, 0.457);
+    border-radius: 25px;
+}
+
+.search-bar svg:first-child{
+    position: relative;
+    left: 2px;
+    bottom: 0px;
+    margin: 12px 8px;
+    fill: rgb(181, 181, 181);
+}
+.search-bar input{
+    position: relative;
+    bottom: 19px;
+    width: 75%;
+    height: 42px;
+    font-size: 17px;
+    caret-color: rgb(181, 181, 181);
+    background-color: transparent;
+     border: none;
+}
+.search-bar input:focus{
+    outline: none;
+}
+.search-bar .right-svg{
+    display: inline-block;
+    position: inherit;
+    left: 20px;
+    bottom: 3px;
+}
+.search-bar .right-svg svg{
+    margin: 10px 5px;
 }
